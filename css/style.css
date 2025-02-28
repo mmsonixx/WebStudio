@@ -1,11 +1,22 @@
+.header {
+}
+.header__link {
+}
+.header__nav {
+}
+.header__nav__list {
+}
+.header__nav__item {
+}
+.header__nav__link {
+}
 .hero {
     background: #2F303A;
     width: 1888px;
 height: 600px;
-
 }
 .hero__title {
-    color: #FFFFFF;
+      color: #FFFFFF;
     display: flex;
 width: 696px;
 height: 120px;
@@ -15,7 +26,7 @@ flex-shrink: 0;
 
 }
 .hero__button {
-    color: #FFF;
+     color: #FFF;
 text-align: center;
 font-family: Roboto;
 font-size: 16px;
@@ -28,4 +39,68 @@ height: 50px;
 border-radius: 4px;
 background: #2196F3;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.features {
+}
+.features__list {
+}
+.features__item {
+}
+.features__title {
+}
+.features__text {
+    color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+width: 270px;
+height: 72px;
+flex-shrink: 0;
+}
+.work {
+}
+.work__title {
+}
+.work__list {
+}
+.work__item {
+}
+.work__img {
+}
+.team {
+}
+.team__title {
+}
+.team__list {
+}
+.team__item {
+}
+.team__img {
+}
+.team__list__title {
+}
+.team__text {
+    color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+.footer {
+}
+.footer__container {
+}
+.footer__logo {
+}
+.footer__logo__colored {
+}
+.footer__adress {
+}
+.footer__link {
 }
