@@ -1,6 +1,17 @@
+:root {
+    --link-color: #2196F3;
+    --title-color: #212121;
+    --text-color: #757575;
+}
 .header {
 }
-.header__link {
+.header__link  {
+  color: #000;
+}
+.header__logo__color {
+  color: var(--link-color)
+}
+.header__container {
 }
 .header__nav {
 }
@@ -9,60 +20,54 @@
 .header__nav__item {
 }
 .header__nav__link {
+  color: #212121;
+}
+.header__contact__list {
+}
+.header__contact__item {
+}
+.header__contact__link {
+color: #757575;
+}
+.header__contact__link__tell {
+  color: #757575;
 }
 .hero {
-    background: #2F303A;
-    width: 1888px;
+  background: #2F303A;
+  width: 1600px;
 height: 600px;
+flex-shrink: 0;
 }
 .hero__title {
-      color: #FFFFFF;
-    display: flex;
-width: 696px;
-height: 120px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+  color: #FFF;
 
 }
 .hero__button {
-     color: #FFF;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 187.5% */
-letter-spacing: 0.96px;
-width: 216px;
-height: 50px;
-border-radius: 4px;
+  color: #FFF;
+  border-radius: 4px;
 background: #2196F3;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .features {
+}
+.features__container {
 }
 .features__list {
 }
 .features__item {
 }
 .features__title {
+  color: var(--title-color)
 }
 .features__text {
-    color: #757575;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
-width: 270px;
-height: 72px;
-flex-shrink: 0;
+  color: var(--text-color)
 }
 .work {
 }
 .work__title {
+  color: var(--title-color)
+}
+.work_container {
 }
 .work__list {
 }
@@ -73,6 +78,9 @@ flex-shrink: 0;
 .team {
 }
 .team__title {
+  color: var(--title-color)
+}
+.team__container {
 }
 .team__list {
 }
@@ -81,16 +89,10 @@ flex-shrink: 0;
 .team__img {
 }
 .team__list__title {
+  color: var(--title-color)
 }
 .team__text {
-    color: #757575;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: var(--text-color)
 }
 .footer {
 }
@@ -101,6 +103,8 @@ letter-spacing: 0.48px;
 .footer__logo__colored {
 }
 .footer__adress {
+  color: #FFF;
 }
 .footer__link {
+  color: rgba(255, 255, 255, 0.60);
 }
