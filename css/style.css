@@ -95,12 +95,18 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--text-color)
 }
 .footer {
+  background: #2F303A;
+  width: 1600px;
+height: 252px;
+flex-shrink: 0;
 }
 .footer__container {
 }
 .footer__logo {
+color: #FFF;
 }
 .footer__logo__colored {
+ color: var(--link-color)
 }
 .footer__adress {
   color: #FFF;
