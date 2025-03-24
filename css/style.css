@@ -10,7 +10,6 @@
 
 }
 .header__link {
-   
   color: #000;
   font-family: "Raleway";
   font-size: 26px;
@@ -265,8 +264,12 @@ letter-spacing: 0.42px;
 .options {
 }
 .options__list {
+ 
 }
 .options__item {
+  text-decoration: none;
+}
+.options__button {
   color: var(--title-color);
 text-align: center;
 font-family: "Roboto";
@@ -276,13 +279,21 @@ font-weight: 500;
 line-height: 26px; /* 162.5% */
 letter-spacing: 0.48px;
 }
-.options__button {
-}
 .advertisement {
 }
 .advertisement__list {
+   
 }
 .advertisement__item {
+   color: var(--title-color);
+text-align: center;
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 162.5% */
+letter-spacing: 0.48px;
+text-decoration: none;
 }
 .advertisement__img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
@@ -295,6 +306,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 36px; /* 200% */
 letter-spacing: 1.08px;
+text-decoration: none;
 }
 .advertisement__text {
   color: var(--text-color);
