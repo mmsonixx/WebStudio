@@ -9,7 +9,7 @@
 .header {
 
 }
-.header__link {
+.header__logo {
   color: #000;
   font-family: "Raleway";
   font-size: 26px;
@@ -264,10 +264,13 @@ letter-spacing: 0.42px;
 .options {
 }
 .options__list {
- 
+ display: flex;
+ justify-content: center;
+ gap: 8px;
+ list-style-type: none;
 }
 .options__item {
-  text-decoration: none;
+ 
 }
 .options__button {
   color: var(--title-color);
