@@ -33,14 +33,14 @@
 }
 .header__nav {
 }
-.header__nav__list {
+.header__list {
   list-style-type: none;
  
 }
-.header__nav__item {
+.header__item {
   
 }
-.header__nav__link {
+.header__link {
   color: #212121;
   font-family: "Roboto";
   font-size: 14px;
