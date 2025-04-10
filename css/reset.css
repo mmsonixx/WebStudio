@@ -1,4 +1,8 @@
+ul, p {
+  margin: 0px;
+  padding: 0px;
+}
 button {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }

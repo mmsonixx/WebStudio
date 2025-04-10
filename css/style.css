@@ -12,6 +12,8 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
+  outline: solid red;
 }
 .body {
   font-family: "Roboto";
@@ -23,9 +25,7 @@
 }
 .header__container {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
-  justify-content: space-between;
 }
 .header__logo {
   color: #000;
@@ -34,7 +34,6 @@
   font-weight: 700;
   letter-spacing: 0.78px;
   text-decoration: none;
-  /* margin-right: 73px; */
 }
 .header__logo__color {
   color: #2196f3;
@@ -46,15 +45,14 @@
   letter-spacing: 0.78px;
 }
 .header__nav {
-  margin-right: 230px;
-  margin-left: 33px;
+  width: 100%;
+  margin-left: 93px;
 }
 .header__list {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 13px;
+  gap: 50px;
 }
 .header__item {
 }
@@ -68,7 +66,6 @@
   letter-spacing: 0.28px;
   text-decoration: none;
   display: block;
-  margin-right: 50px;
 }
 .header__contact {
 }
@@ -76,7 +73,9 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin: 32px;
+  
+  margin-left: auto;
+ 
 }
 .header__contact__item {
 }
@@ -99,21 +98,19 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  margin-right: 215px;
   text-decoration: none;
   text-wrap: nowrap;
 }
 /* Hero */
 .hero {
   background: #2f303a;
-  width: 1900px;
-  height: 600px;
   flex-shrink: 0;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero__title {
   font-family: "Roboto";
-  padding-top: 200px;
   color: #ffff;
   margin-bottom: 30px;
   font-size: 44px;
@@ -355,7 +352,6 @@
 .advertisement {
   margin: 20px 24px;
   gap: 30px;
-  
 }
 .advertisement__list {
   list-style-type: none;
