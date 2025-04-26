@@ -377,12 +377,13 @@
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  gap: 30px;
+  /* gap: 30px; */
   padding-top: 50px;
 }
 .advertisement__item {
   border: 1px solid #eee;
   max-width: 370px;
+  flex-basis: calc((100 - (30px * 2)) / 3);
 }
 .advertisement__img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
