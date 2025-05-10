@@ -111,11 +111,13 @@
 }
 /* Hero */
 .hero {
-  background: #2f303a;
   flex-shrink: 0;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)),
+    url("../img/studio/background.webp");
+  background-size: 100% 600px;
 }
 .hero__title {
   font-family: "Roboto";
@@ -181,7 +183,7 @@
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   margin-bottom: 30px;
 }
 .features__item:nth-child(1)::before {
@@ -191,18 +193,18 @@
 }
 .features__item:nth-child(2)::before {
   background-image: url("../img/studio/clock.webp");
- background-repeat: no-repeat;
- background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features__item:nth-child(3)::before {
   background-image: url("../img/studio/diagram.webp");
- background-repeat: no-repeat;
- background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features__item:nth-child(4):before {
   background-image: url("../img/studio/astronaut.webp");
-   background-repeat: no-repeat;
-   background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features__text {
   color: var(--text-color);
@@ -276,10 +278,13 @@
   list-style-type: none;
 }
 .team__item {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team__img {
-  background: url(<path-to-image>) lightgray -40.687px -0.224px / 175.271%
-    121.356% no-repeat;
+  /* background: url(<path-to-image>) lightgray -40.687px -0.224px / 175.271%
+    121.356% no-repeat; */
   margin-bottom: 30px;
 }
 
@@ -413,6 +418,9 @@
   border: 1px solid #eee;
   max-width: 370px;
   flex-basis: calc((100 - (30px * 2)) / 3);
+}
+.advertisement__item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .advertisement__img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
