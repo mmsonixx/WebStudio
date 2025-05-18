@@ -68,7 +68,7 @@
   text-decoration: none;
   display: block;
 }
-.header__link:hover {
+.header__link:hover, .header__link:focus  {
   color: #2196f3;
 }
 .header__contact {
@@ -93,7 +93,7 @@
   letter-spacing: 0.28px;
   margin-right: 50px;
 }
-.header__contact__link:hover {
+.header__contact__link:hover, .header__contact__link:focus {
   color: #2196f3;
 }
 .header__contact__link__tell {
@@ -107,7 +107,7 @@
   text-decoration: none;
   text-wrap: nowrap;
 }
-.header__contact__link__tell:hover {
+.header__contact__link__tell:hover, .header__contact__link__tell:focus {
   color: #2196f3;
 }
 /* Hero */
@@ -257,6 +257,7 @@
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #F5F4FA;
 }
 .team__title {
   color: var(--title-color);
