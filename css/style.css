@@ -343,6 +343,7 @@
   border-radius: 50%;
   background-color: #ffffff;
   margin-bottom: 30px;
+  fill: #afb1b8;
 }
 .team__link:hover,
 .team__link__icons:hover,
@@ -353,7 +354,7 @@
 .team__link__icons {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  
 }
 /* Clients */
 .clients {
@@ -377,6 +378,7 @@ margin-bottom: 50px;
 }
 .clients__item:hover, .clients__item:focus {
   border-radius: 4px;
+  fill:#2196F3 ;
 border: 1px solid #2196F3;
 }
 .clients__item {
@@ -387,13 +389,11 @@ border: 1px solid #AFB1B8;
 display: flex;
 justify-content: center;
 align-items: center;
+fill: #AFB1B8;
 }
 .clients__link {
- fill: #AFB1B8;
 }
-.clients__link:hover, .clients__link:focus {
-  fill: #2196F3;
-}
+
 /* Footer */
 .footer {
   background: #2f303a;
