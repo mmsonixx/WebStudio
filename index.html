@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    
   </head>
   <body class="body">
     <header class="header">
@@ -75,14 +76,75 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button" type="button">Замовити послугу</button>
+          <button class="hero__button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
-        <div class="hero__backdrop">
-          <div class="modal">
-            
+        
+      </section>
+      <div class="hero__backdrop is-hidden" data-modal>
+          <div class="hero__modal">
+            <button class="hero__modal__button__close" data-modal-close>
+              <svg class="hero__modal__svg">
+                <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+            <h3 class="hero__modal__subtitle">
+              Залиште свої дані, ми вам передзвонимо
+            </h3>
+            <form action="" class="hero__modal__form">
+              <label for="" class="hero__modal__label">
+                Ім'я
+                <div class="box">
+                  <svg class="hero__modal__icon">
+                    <use
+                      href="./img/icons/symbol-defs.svg#icon-person-modal"
+                    ></use>
+                  </svg>
+                  <input type="text" class="hero__modal__input" />
+                </div>
+              </label>
+              <label for="" class="hero__modal__label">
+                Телефон
+                <div class="box">
+                  <svg class="hero__modal__icon">
+                    <use
+                      href="./img/icons/symbol-defs.svg#icon-email-modal"
+                    ></use>
+                  </svg>
+                  <input type="tel" class="hero__modal__input" />
+                </div>
+              </label>
+              <label for="" class="hero__modal__label">
+                Пошта
+                <div class="box">
+                  <svg class="hero__modal__icon">
+                    <use
+                      href="./img/icons/symbol-defs.svg#icon-phone-modal"
+                    ></use>
+                  </svg>
+                  <input type="email" class="hero__modal__input" />
+                </div>
+              </label>
+              <label for="" class="hero__modal__label">
+                Коментар
+                
+                  <input
+                    class="hero__modal__comment"
+                   type="text"
+                    placeholder="Введіть текст"
+                  ></input>
+              
+              </label>
+              <label for="" class="hero__modal__checkbox">
+                <input type="checkbox" class="hero__input__checkbox" />
+                Погоджуюся з розсилкою та приймаю
+                <a href="" class="hero__modal__link">Умови договору</a>
+              </label>
+              <button class="hero__modal__button">Відправити</button>
+            </form>
           </div>
         </div>
-      </section>
       <section class="features">
         <div class="container">
           <div class="features__container">
@@ -138,7 +200,7 @@
                   src="./img/studio/second.webp"
                   alt="Жінка тримає телефон"
                 />
-                 <p class="work__text">Мобільні додатки</p>
+                <p class="work__text">Мобільні додатки</p>
               </li>
               <li class="work__item">
                 <img
@@ -146,7 +208,7 @@
                   src="./img/studio/third.webp"
                   alt="Планшет"
                 />
-                 <p class="work__text">Дизайнерські рішення</p>
+                <p class="work__text">Дизайнерські рішення</p>
               </li>
             </ul>
           </div>
@@ -431,25 +493,27 @@
               <li class="footer__item__icons">
                 <a href="" class="footer__link__icons">
                   <svg class="footer__icons" width="20" height="20">
-                    <use href="./img/icons/symbol-defs.svg#icon-instagram"></use>
+                    <use
+                      href="./img/icons/symbol-defs.svg#icon-instagram"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__item__icons">
                 <a href="" class="footer__link__icons">
-                  <svg class="footer__icons"  width="20" height="20">
+                  <svg class="footer__icons" width="20" height="20">
                     <use href="./img/icons/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__item__icons" >
+              <li class="footer__item__icons">
                 <a href="" class="footer__link__icons">
                   <svg class="footer__icons" width="20" height="20">
                     <use href="./img/icons/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__item__icons" >
+              <li class="footer__item__icons">
                 <a href="" class="footer__link__icons">
                   <svg class="footer__icons" width="20" height="20">
                     <use href="./img/icons/symbol-defs.svg#icon-linkedin"></use>
@@ -461,5 +525,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
