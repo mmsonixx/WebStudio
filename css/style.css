@@ -184,15 +184,24 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0
 padding: 14px 40px 40px 40px;
 z-index: 2;
 }
+.hero__modal__button__close:hover {
+fill: #2196F3;
+}
 .hero__modal__button__close {
 margin-left: 450px;
-border-radius: rgba(212, 0, 0, 0.1) 3px solid;
-
+border: solid rgba(0, 0, 0, 0.10) 1px;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .hero__modal__svg {
   width: 18px;
 height: 18px;
-margin-right: 12px;
+/* outline: solid red; */
+
 }
 .hero__modal__subtitle {
   color: #212121;
@@ -218,6 +227,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.12px;
+}
+.box:hover {
+  border-radius: 4px;
+border: 1px solid #2196F3;
+fill: #2196F3;
 }
 .box {
   border-radius: 4px;
@@ -591,12 +605,12 @@ fill: #AFB1B8;
 .footer__container {
   display: flex;
   justify-items: flex-start;
-
+justify-content: space-between;
 }
 .footer__info {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 .footer__logo {
   color: #fff;
@@ -675,7 +689,69 @@ justify-content: center;
 height: 20px;
 fill: white;
 }
-.footer__icons {
+
+.footer__field {
+}
+.footer__subtitle {
+  color: #FFF;
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer__form {
+  display: flex;
+  gap: 12px;
+}
+.footer__label {
+  width: 358px;
+height: 50px;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+display: flex;
+align-items: center;
+}
+.footer__input {
+color: rgba(255, 255, 255, 0.60);
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: 0.48px;
+margin-left: 16px;
+border: none;
+outline: none;
+background: #2F303A;
+}
+.footer__btn {
+  color: #FFF;
+text-align: center;
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+border-radius: 4px;
+background: #2196F3;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+width: 200px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.footer__btn__icon {
+  width: 24px;
+height: 24px;
+fill: #FFF;
 }
 /* Portfolio */
 
