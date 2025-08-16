@@ -19,6 +19,11 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="header">
@@ -182,7 +187,7 @@
       </section>
       <section class="work">
         <div class="container">
-          <h2 class="work__title">Чим ми займаємося</h2>
+          <h2 class="work__title" data-aos="fade-down">Чим ми займаємося</h2>
           <div class="work_container">
             <ul class="work__list">
               <li class="work__item">
@@ -191,7 +196,8 @@
                   src="./img/studio/first.webp"
                   alt="Людина пише код"
                 />
-                <p class="work__text">Десктопні додатки</p>
+                <p class="work__text" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Десктопні додатки</p>
               </li>
               <li class="work__item">
                 <img
@@ -199,7 +205,8 @@
                   src="./img/studio/second.webp"
                   alt="Жінка тримає телефон"
                 />
-                <p class="work__text">Мобільні додатки</p>
+                <p class="work__text" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Мобільні додатки</p>
               </li>
               <li class="work__item">
                 <img
@@ -207,7 +214,8 @@
                   src="./img/studio/third.webp"
                   alt="Планшет"
                 />
-                <p class="work__text">Дизайнерські рішення</p>
+                <p class="work__text" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Дизайнерські рішення</p>
               </li>
             </ul>
           </div>
@@ -215,7 +223,7 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team__title" data-aos="fade-down"   data-aos-duration="2000">Наша команда</h2>
           <div class="team__container">
             <ul class="team__list">
               <li class="team__item">
@@ -228,7 +236,8 @@
                   <h3 class="team__list__title">Ігор Дем'яненко</h3>
                   <p class="team__text" lang="en">Product Designer</p>
                   <ul class="team__list__icons">
-                    <li class="team__item__icons">
+                    <li class="team__item__icons"  >
+
                       <a href="" class="team__link">
                         <svg class="team__link__icons">
                           <use
@@ -237,6 +246,7 @@
                         </svg>
                       </a>
                     </li>
+                  
                     <li class="team__item__icons">
                       <a href="" class="team__link">
                         <svg class="team__link__icons">
@@ -423,7 +433,7 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
+          <h2 class="clients__title"  data-aos="fade-down"   data-aos-duration="2000">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <a href="" class="clients__link">
@@ -538,5 +548,9 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
