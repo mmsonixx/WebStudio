@@ -13,3 +13,8 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+
+// const top = document.querySelector("#top")
+// top.addEventListener("click", function () {
+//   window.scrollTo(0, 0);
+// });

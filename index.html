@@ -19,14 +19,14 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="body">
-    <header class="header">
+    <header id="top" class="header">
       <div class="container">
         <div class="header__container">
           <a class="header__logo" href="./index.html"
@@ -54,7 +54,7 @@
                   href="mailto:info@devstudio.com"
                   lang="en"
                 >
-                  <svg class="header__contact__icon" width="16" height="12">
+                  <svg class="header__contact__icon  animate__animated animate__tada animate__infinite	animate__delay-3s animate__slower	3s" width="16" height="12">
                     <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com</a
@@ -62,7 +62,7 @@
               </li>
               <li>
                 <a class="header__contact__link__tell" href="tel:+380961111111">
-                  <svg class="header__contact__icon" width="10" height="16">
+                  <svg class="header__contact__icon animate__animated animate__tada animate__infinite	animate__delay-3s animate__slower	3s" width="10" height="16">
                     <use
                       href="./img/icons/symbol-defs.svg#icon-smartphone"
                     ></use>
@@ -96,39 +96,30 @@
             Залиште свої дані, ми вам передзвонимо
           </h3>
           <form action="" class="hero__modal__form">
-            <label for="" class="hero__modal__label">
-              Ім'я  </label>
-              <div class="box">
-                <svg class="hero__modal__icon">
-                  <use
-                    href="./img/icons/symbol-defs.svg#icon-person-modal"
-                  ></use>
-                </svg>
-                <input type="text" class="hero__modal__input" />
-              </div>
-          
-            <label for="" class="hero__modal__label">
-              Телефон</label>
-              <div class="box">
-                <svg class="hero__modal__icon">
-                  <use
-                    href="./img/icons/symbol-defs.svg#icon-phone-modal"
-                  ></use>
-                </svg>
-                <input type="tel" class="hero__modal__input" />
-              </div>
-            
-            <label for="" class="hero__modal__label">
-              Пошта </label>
-              <div class="box">
-                <svg class="hero__modal__icon">
-                  <use
-                    href="./img/icons/symbol-defs.svg#icon-email-modal"
-                  ></use>
-                </svg>
-                <input type="email" class="hero__modal__input" />
-              </div>
-           
+            <label for="" class="hero__modal__label"> Ім'я </label>
+            <div class="box">
+              <svg class="hero__modal__icon">
+                <use href="./img/icons/symbol-defs.svg#icon-person-modal"></use>
+              </svg>
+              <input type="text" class="hero__modal__input" />
+            </div>
+
+            <label for="" class="hero__modal__label"> Телефон</label>
+            <div class="box">
+              <svg class="hero__modal__icon">
+                <use href="./img/icons/symbol-defs.svg#icon-phone-modal"></use>
+              </svg>
+              <input type="tel" class="hero__modal__input" />
+            </div>
+
+            <label for="" class="hero__modal__label"> Пошта </label>
+            <div class="box">
+              <svg class="hero__modal__icon">
+                <use href="./img/icons/symbol-defs.svg#icon-email-modal"></use>
+              </svg>
+              <input type="email" class="hero__modal__input" />
+            </div>
+
             <label for="" class="hero__modal__label"> Коментар</label>
             <textarea
               class="hero__modal__comment"
@@ -138,13 +129,14 @@
               placeholder="Введіть текст"
               required
             ></textarea>
-           <div class="hero__modal__label-confirm">
-              <input type="checkbox" class="hero__input__checkbox" required/>
-            
-               <label for="" class="hero__modal__checkbox">  Погоджуюся з розсилкою та приймаю
-                   <a href="" class="hero__modal__link">Умови договору</a>
-              </label>     
-           </div>
+            <div class="hero__modal__label-confirm">
+              <input type="checkbox" class="hero__input__checkbox" required />
+
+              <label for="" class="hero__modal__checkbox">
+                Погоджуюся з розсилкою та приймаю
+                <a href="" class="hero__modal__link">Умови договору</a>
+              </label>
+            </div>
             <button class="hero__modal__button">Відправити</button>
           </form>
         </div>
@@ -196,8 +188,14 @@
                   src="./img/studio/first.webp"
                   alt="Людина пише код"
                 />
-                <p class="work__text" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Десктопні додатки</p>
+                <p
+                  class="work__text"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-duration="2000"
+                >
+                  Десктопні додатки
+                </p>
               </li>
               <li class="work__item">
                 <img
@@ -205,8 +203,14 @@
                   src="./img/studio/second.webp"
                   alt="Жінка тримає телефон"
                 />
-                <p class="work__text" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Мобільні додатки</p>
+                <p
+                  class="work__text"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-duration="2000"
+                >
+                  Мобільні додатки
+                </p>
               </li>
               <li class="work__item">
                 <img
@@ -214,8 +218,14 @@
                   src="./img/studio/third.webp"
                   alt="Планшет"
                 />
-                <p class="work__text" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"   data-aos-duration="2000">Дизайнерські рішення</p>
+                <p
+                  class="work__text"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-duration="2000"
+                >
+                  Дизайнерські рішення
+                </p>
               </li>
             </ul>
           </div>
@@ -223,7 +233,9 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team__title" data-aos="fade-down"   data-aos-duration="2000">Наша команда</h2>
+          <h2 class="team__title" data-aos="fade-down" data-aos-duration="2000">
+            Наша команда
+          </h2>
           <div class="team__container">
             <ul class="team__list">
               <li class="team__item">
@@ -236,8 +248,7 @@
                   <h3 class="team__list__title">Ігор Дем'яненко</h3>
                   <p class="team__text" lang="en">Product Designer</p>
                   <ul class="team__list__icons">
-                    <li class="team__item__icons"  >
-
+                    <li class="team__item__icons">
                       <a href="" class="team__link">
                         <svg class="team__link__icons">
                           <use
@@ -246,7 +257,7 @@
                         </svg>
                       </a>
                     </li>
-                  
+
                     <li class="team__item__icons">
                       <a href="" class="team__link">
                         <svg class="team__link__icons">
@@ -433,7 +444,13 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="clients__title"  data-aos="fade-down"   data-aos-duration="2000">Постійні клієнти</h2>
+          <h2
+            class="clients__title"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            Постійні клієнти
+          </h2>
           <ul class="clients__list">
             <li class="clients__item">
               <a href="" class="clients__link">
@@ -535,9 +552,15 @@
             <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
             <form action="" class="footer__form">
               <label for="" class="footer__label">
-                 <input type="email" placeholder="E-mail" class="footer__input" required>
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  class="footer__input"
+                  required
+                />
               </label>
-              <button class="footer__btn">Підписатися
+              <button class="footer__btn">
+                Підписатися
                 <svg class="footer__btn__icon">
                   <use href="./img/icons/symbol-defs.svg#icon-send"></use>
                 </svg>
@@ -547,10 +570,15 @@
         </div>
       </div>
     </footer>
+    <button href="#top" class="scroll__top"
+      ><svg class="iocn__to-top">
+        <use href="./img/icons/symbol-defs.svg#icon-to-top"></use>
+      </svg>
+    </button>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
   </body>
 </html>
