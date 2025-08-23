@@ -1,0 +1,22 @@
+@keyframes header__link {
+    0% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes footer__pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.10);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

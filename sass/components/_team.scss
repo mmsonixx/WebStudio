@@ -1,0 +1,105 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #f5f4fa;
+}
+
+.team__title {
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.team__container {}
+
+.team__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team__item {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+}
+
+.team__img {
+    /* background: url(<path-to-image>) lightgray -40.687px -0.224px / 175.271%
+    121.356% no-repeat; */
+    margin-bottom: 30px;
+}
+
+.team__list__title {
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+}
+
+.team__text {
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 16px;
+}
+
+.team__box {}
+
+.team__list__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team__item__icons {}
+
+.team__link:hover,
+.team__link:focus {
+    background-color: #2196f3;
+}
+
+.team__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    fill: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__link:hover,
+.team__link__icons:hover,
+.team__link:focus,
+.team__link__icons:focus {
+    fill: white;
+}
+
+.team__link__icons {
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
