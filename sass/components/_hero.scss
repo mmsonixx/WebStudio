@@ -6,39 +6,40 @@
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)),
         url("../img/studio/background.webp");
     background-size: 100% 600px;
+
+    &__title {
+            font-family: "Roboto";
+            color: #ffff;
+            margin-bottom: 30px;
+            font-size: 44px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 136.364%;
+            letter-spacing: 2.64px;
+            width: 696px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    
+        &__button {
+            border-radius: 4px;
+            background: #2196f3;
+            width: 216px;
+            height: 50px;
+            cursor: pointer;
+            text-align: center;
+            color: #fff;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            /* 187.5% */
+            letter-spacing: 0.96px;
+        }
 }
 
-.hero__title {
-    font-family: "Roboto";
-    color: #ffff;
-    margin-bottom: 30px;
-    font-size: 44px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
-    letter-spacing: 2.64px;
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.hero__button {
-    border-radius: 4px;
-    background: #2196f3;
-    width: 216px;
-    height: 50px;
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    /* 187.5% */
-    letter-spacing: 0.96px;
-}
