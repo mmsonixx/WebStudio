@@ -10,7 +10,7 @@
         &__item {}
     
         &__button {
-            color: var(--title-color);
+            color: $title-color;
             text-align: center;
             font-family: "Roboto";
             font-size: 16px;

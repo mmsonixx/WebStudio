@@ -31,7 +31,7 @@
         }
     
         &__title {
-            color: var(--title-color);
+            color: $title-color;
             font-family: "Roboto";
             font-size: 18px;
             line-height: 36px;
@@ -43,7 +43,7 @@
         }
     
         &__text {
-            color: var(--text-color);
+            color: $text-color;
             font-family: "Roboto";
             font-size: 16px;
             font-style: normal;

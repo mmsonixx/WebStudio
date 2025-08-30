@@ -165,7 +165,7 @@
 .hero__input__checkbox {}
 
 .hero__modal__link {
-    color: #2196f3;
+    color: $link-color;
     font-family: "Roboto";
     font-size: 14px;
     font-style: normal;
@@ -226,21 +226,4 @@
     line-height: 28px;
     letter-spacing: 0.54px;
     margin: 63px 24px;
-}
-.scroll__top {
-    width: 80px;
-    height: 80px;
-    background-color: #2196f3;
-    border-radius: 50px;
-    bottom: 20px;
-    right: 40px;
-    position: fixed;
-    box-shadow: 0px 0px 10px #2055b9;
-
-}
-
-.iocn__to-top {
-    width: 30px;
-    height: 40px;
-    fill: #eee;
 }

@@ -13,7 +13,7 @@
        &__item {}
     
         &__title {
-            color: var(--title-color);
+            color: $title-color;
             font-family: "Roboto";
             font-size: 14px;
             font-style: normal;
@@ -59,7 +59,7 @@
         }
     
         &__text {
-            color: var(--text-color);
+            color: $text-color;
             font-family: "Roboto";
             font-size: 14px;
             font-style: normal;

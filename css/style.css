@@ -29,12 +29,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --link-color: #2196f3;
-  --title-color: #212121;
-  --text-color: #757575;
-}
-
 @keyframes header__link {
   0% {
     transform: translateY(-300%);
@@ -298,23 +292,6 @@ a {
   margin: 63px 24px;
 }
 
-.scroll__top {
-  width: 80px;
-  height: 80px;
-  background-color: #2196f3;
-  border-radius: 50px;
-  bottom: 20px;
-  right: 40px;
-  position: fixed;
-  box-shadow: 0px 0px 10px #2055b9;
-}
-
-.iocn__to-top {
-  width: 30px;
-  height: 40px;
-  fill: #eee;
-}
-
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -492,7 +469,7 @@ a {
   list-style-type: none;
 }
 .features__title {
-  color: var(--title-color);
+  color: #212121;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -532,7 +509,7 @@ a {
   background-position: center;
 }
 .features__text {
-  color: var(--text-color);
+  color: #757575;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -547,7 +524,7 @@ a {
   padding-bottom: 94px;
 }
 .work__title {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: "Roboto";
   font-size: 36px;
@@ -603,7 +580,7 @@ a {
   background: #f5f4fa;
 }
 .team__title {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: "Roboto";
   font-size: 36px;
@@ -630,7 +607,7 @@ a {
   margin-bottom: 30px;
 }
 .team__list__title {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -641,7 +618,7 @@ a {
   margin-bottom: 10px;
 }
 .team__text {
-  color: var(--text-color);
+  color: #757575;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -686,7 +663,7 @@ a {
   padding-bottom: 94px;
 }
 .clients__title {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: "Roboto";
   font-size: 36px;
@@ -877,6 +854,23 @@ a {
   fill: #fff;
 }
 
+.scroll__top {
+  width: 80px;
+  height: 80px;
+  background-color: #2196f3;
+  border-radius: 50px;
+  bottom: 20px;
+  right: 40px;
+  position: fixed;
+  box-shadow: 0px 0px 10px #2055b9;
+}
+
+.iocn__to-top {
+  width: 30px;
+  height: 40px;
+  fill: #eee;
+}
+
 .options {
   padding-top: 94px;
 }
@@ -886,7 +880,7 @@ a {
   gap: 8px;
 }
 .options__button {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -931,7 +925,7 @@ a {
   height: auto;
 }
 .advertisement__title {
-  color: var(--title-color);
+  color: #212121;
   font-family: "Roboto";
   font-size: 18px;
   line-height: 36px;
@@ -942,7 +936,7 @@ a {
   padding-left: 24px;
 }
 .advertisement__text {
-  color: var(--text-color);
+  color: #757575;
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
