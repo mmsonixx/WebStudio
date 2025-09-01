@@ -48,6 +48,39 @@ a {
     transform: scale(1);
   }
 }
+.clients__title, .team__title, .work__title {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.footer__btn, .hero__button {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  /* 187.5% */
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196f3;
+}
+
+.footer__logo__colored, .footer__logo, .header__logo__color, .header__logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+
 *,
 *::before,
 *::after {
@@ -309,22 +342,14 @@ a {
 }
 .header__logo {
   color: #000;
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.78px;
   text-decoration: none;
   transform: translateY(-350%);
   animation: header__link 2s forwards;
 }
 .header__logo__color {
   color: #2196f3;
-  font-family: "Raleway";
-  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
 }
 .header__nav {
   width: 100%;
@@ -442,21 +467,9 @@ a {
   margin-bottom: 30px;
 }
 .hero__button {
-  border-radius: 4px;
-  background: #2196f3;
   width: 216px;
   height: 50px;
   cursor: pointer;
-  text-align: center;
-  color: #fff;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  /* 187.5% */
-  letter-spacing: 0.96px;
 }
 
 .features {
@@ -523,17 +536,6 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.work__title {
-  color: #212121;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
 .work__list {
   list-style-type: none;
   text-align: center;
@@ -578,17 +580,6 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
-}
-.team__title {
-  color: #212121;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
 }
 .team__list {
   display: flex;
@@ -662,17 +653,6 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients__title {
-  color: #212121;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
 .clients__list {
   display: flex;
   gap: 30px;
@@ -712,23 +692,14 @@ a {
 }
 .footer__logo {
   color: #fff;
-  font-family: "Raleway";
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
   text-decoration: none;
   margin-bottom: 20px;
 }
 .footer__logo__colored {
   color: #2196f3;
-  font-family: "Raleway";
-  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
 }
 .footer__adress {
   color: #fff;
@@ -829,17 +800,6 @@ a {
   background: #2f303a;
 }
 .footer__btn {
-  color: #fff;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  /* 187.5% */
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;

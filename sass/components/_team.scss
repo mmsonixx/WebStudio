@@ -4,15 +4,7 @@
     background: #f5f4fa;
 
     &__title {
-            color: $title-color;
-            text-align: center;
-            font-family: "Roboto";
-            font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 1.08px;
-            margin-bottom: 50px;
+            @extend %title;
         }
     
         &__container {}

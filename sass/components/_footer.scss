@@ -19,24 +19,17 @@
     
         &__logo {
             color: #fff;
-            font-family: "Raleway";
-            font-size: 26px;
-            font-style: normal;
-            font-weight: 700;
+        @extend %logo;
             line-height: normal;
-            letter-spacing: 0.78px;
             text-decoration: none;
             margin-bottom: 20px;
         }
     
         &__logo__colored {
+            @extend %logo;
             color: $link-color;
-            font-family: "Raleway";
-            font-size: 26px;
             font-style: normal;
-            font-weight: 700;
             line-height: normal;
-            letter-spacing: 0.78px;
         }
     
         &__adress {
@@ -154,17 +147,7 @@
         }
     
         &__btn {
-            color: #fff;
-            text-align: center;
-            font-family: "Roboto";
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 30px;
-            /* 187.5% */
-            letter-spacing: 0.96px;
-            border-radius: 4px;
-            background: #2196f3;
+        @extend %button;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             width: 200px;
             height: 50px;
