@@ -5,6 +5,11 @@
 
     &__title {
             @extend %title;
+            font-weight: 700;
+                text-align: center;
+                font-size: 36px;
+                letter-spacing: 1.08px;
+                margin-bottom: 50px;
         }
     
         &__container {}
@@ -30,13 +35,11 @@
         }
     
         &__list__title {
-            color: $title-color;
+           @extend %title;
             text-align: center;
-            font-family: "Roboto";
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: normal;
             letter-spacing: 0.48px;
             margin-bottom: 10px;
         }
