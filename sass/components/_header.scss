@@ -1,147 +1,120 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ececec;
-    /* position: fixed;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: #FFF;
   z-index: 2; */
-&__container {
-        display: flex;
-        align-items: center;
-    }
+  &__container {
+    @include flex-position($horizontally: none);
+  }
 
-    &__logo {
-        color: #000;
-        @extend %logo;
-        text-decoration: none;
-        transform: translateY(-350%);
-        animation: header__link 2s forwards;
-    }
+  &__logo {
+    color: #000;
+    @extend %logo;
+    text-decoration: none;
+    transform: translateY(-350%);
+    animation: header__link 2s forwards;
+  }
 
-    &__logo__color {
-        color: $link-color;
-        @extend %logo;
-        font-style: normal;
-       
-        line-height: normal;
-      
-    }
+  &__logo__color {
+    color: $link-color;
+    @extend %logo;
+    font-style: normal;
+    line-height: normal;
+  }
 
-    &__nav {
-        width: 100%;
-        margin-left: 93px;
-    }
+  &__nav {
+    width: 100%;
+    margin-left: 93px;
+  }
 
-    &__list {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        gap: 50px;
-    }
+  &__list {
+    @include flex-position($gap: 50px, $horizontally: none);
+    list-style-type: none;
+  }
 
-   &__item {
-        transform: translateY(-300%);
-        animation: header__link 2s forwards;
-    }
+  &__item {
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
+  }
 
+  &__link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196f3;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
+  &__link:hover::after {
+    opacity: 1;
+  }
 
-    &__link::after {
-        content: "";
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background: #2196f3;
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        bottom: -32px;
-        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  &__link {
+    @include text($color: #212121, $size: 14px, $spacing: 0.28px, $weight: 500);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &__link:hover::after {
+  &__link:hover,
+  &__link:focus {
+    color: $link-color;
+  }
 
-        opacity: 1;
-    }
+  &__contact {
+  }
 
-    &__link {
-        color: #212121;
-        font-family: "Roboto";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        text-decoration: none;
-        display: block;
-        position: relative;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  &__contact__list {
+    @include flex-position($horizontally: none);
+    list-style-type: none;
+    margin-left: auto;
+  }
 
-    &__link:hover,
-   &__link:focus {
-        color: $link-color;
-    }
+  &__contact__item {
+  }
 
-    &__contact {}
+  &__contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 
-    &__contact__list {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
+  &__contact__link {
+    @include text($size: 14px, $spacing: 0.28px, $weight: 500);
+    margin-right: 50px;
+    @include flex-position($horizontally: none);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
+  }
 
-        margin-left: auto;
-    }
+  &__contact__link:hover,
+  &__contact__link:focus {
+    color: #2196f3;
+  }
 
-    &__contact__item {}
+  &__contact__link__tell {
+    @include text($size: 14px, $spacing: 0.28px, $weight: 500);
+    text-wrap: nowrap;
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
+  }
 
-    &__contact__icon {
-        margin-right: 10px;
-        fill: currentColor;
-    }
-
-    &__contact__link {
-        color: #757575;
-        font-family: "Roboto";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        margin-right: 50px;
-        display: flex;
-        align-items: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transform: translateY(-300%);
-        animation: header__link 2s forwards;
-    }
-
-    &__contact__link:hover,
-   &__contact__link:focus {
-        color: #2196f3;
-    }
-
-   &__contact__link__tell {
-        color: #757575;
-        font-family: "Roboto";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        text-wrap: nowrap;
-        display: flex;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transform: translateY(-300%);
-        animation: header__link 2s forwards;
-    }
-
-    &__contact__link__tell:hover,
-    &__contact__link__tell:focus {
-        color: #2196f3;
-    }
+  &__contact__link__tell:hover,
+  &__contact__link__tell:focus {
+    color: #2196f3;
+  }
 }
-

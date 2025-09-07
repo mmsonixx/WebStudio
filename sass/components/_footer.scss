@@ -6,14 +6,12 @@
     padding-bottom: 60px;
 
     &__container {
-            display: flex;
+        @include flex-position($horizontally: space-between, $vertically: none);
             justify-items: flex-start;
-            justify-content: space-between;
         }
     
         &__info {
-            display: flex;
-            flex-direction: column;
+            @include flex-position($direction: column, $vertically: none, $horizontally:none);
             /* margin-right: 70px; */
         }
     
@@ -33,27 +31,13 @@
         }
     
         &__adress {
-            color: #fff;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            /* 171.429% */
-            letter-spacing: 0.42px;
+             @include text($color: #fff, $size: 14px, $height: 24px, $spacing: 0.42px);
             text-decoration: none;
             margin-bottom: 9px;
         }
     
         &__link {
-            color: rgba(255, 255, 255, 0.6);
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            /* 171.429% */
-            letter-spacing: 0.42px;
+             @include text($color:rgba(255, 255, 255, 0.6), $size: 14px, $height: 24px, $spacing: 0.42px);
             text-decoration: none;
             margin-bottom: 9px;
         }
@@ -61,20 +45,13 @@
         &__box {}
     
         &__subtitle {
-            color: #fff;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.42px;
+             @include title($color:#fff, $size: 14px, $height: normal, $spacing: 0.42px, $weight: 700);
             text-transform: uppercase;
             margin-bottom: 20px;
         }
     
         &__list__icons {
-            display: flex;
-            gap: 10px;
+            @include flex-position( $gap: 10px, $vertically: none, $horizontally: none);
         }
     
         &__item__icons:hover,
@@ -83,13 +60,11 @@
         }
     
         &__item__icons {
-            border-radius: 50%;
+            @include flex-position();
+             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.1);
             width: 44px;
             height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             animation-name: footer__pulse;
             animation-iteration-count: infinite;
@@ -104,42 +79,22 @@
     
         &__field {}
     
-        &__subtitle {
-            color: #fff;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.42px;
-            text-transform: uppercase;
-        }
-    
         &__form {
-            display: flex;
-            gap: 12px;
+            @include flex-position($gap: 12px);
         }
     
         &__label {
+            @include flex-position($horizontally: none);
             width: 358px;
             height: 50px;
             border-radius: 4px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             background: rgba(33, 150, 243, 0);
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            display: flex;
-            align-items: center;
         }
     
         &__input {
-            color: rgba(255, 255, 255, 0.6);
-            font-family: "Roboto";
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px;
-            /* 125% */
-            letter-spacing: 0.48px;
+             @include text($color:rgba(255, 255, 255, 0.6), $size: 16px, $height: 20px, $spacing: 0.48px);
             margin-left: 16px;
             border: none;
             outline: none;
@@ -147,14 +102,11 @@
         }
     
         &__btn {
+         @include flex-position($gap: 10px);
         @extend %button;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             width: 200px;
             height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
         }
     
         &__btn__icon {

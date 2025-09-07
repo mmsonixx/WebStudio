@@ -13,8 +13,14 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+(() => {
+  const toTop = document.querySelector(".scroll__top");
 
-// const top = document.querySelector("#top")
-// top.addEventListener("click", function () {
-//   window.scrollTo(0, 0);
-// });
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    } else {
+      toTop.classList.remove("active");
+    }
+  });
+})();

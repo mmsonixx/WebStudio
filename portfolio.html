@@ -18,14 +18,14 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
-     <link rel="stylesheet" href="./css/style.min.css">
+
     <link rel="stylesheet" href="./css/style.css" />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -56,15 +56,23 @@
                   href="mailto:info@devstudio.com"
                   lang="en"
                 >
-                  <svg class="header__contact__icon animate__animated animate__tada animate__infinite	animate__delay-3s animate__slower	3s" width="16" height="12">
+                  <svg
+                    class="header__contact__icon animate__animated animate__tada animate__infinite animate__delay-3s animate__slower 3s"
+                    width="16"
+                    height="12"
+                  >
                     <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="header__contact__link__tell " href="tel:+380961111111">
-                  <svg class="header__contact__icon animate__animated animate__tada animate__infinite	animate__delay-3s animate__slower	3s" width="10" height="16">
+                <a class="header__contact__link__tell" href="tel:+380961111111">
+                  <svg
+                    class="header__contact__icon animate__animated animate__tada animate__infinite animate__delay-3s animate__slower 3s"
+                    width="10"
+                    height="16"
+                  >
                     <use
                       href="./img/icons/symbol-defs.svg#icon-smartphone"
                     ></use>
@@ -342,5 +350,15 @@
         </div>
       </div>
     </footer>
+    <a href="#" class="scroll__top">
+      <svg class="iocn__to-top">
+        <use href="./img/icons/symbol-defs.svg#icon-to-top"></use>
+      </svg>
+    </a>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

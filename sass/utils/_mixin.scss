@@ -1,3 +1,25 @@
-@mixin () {
-    
+@mixin flex-position($gap: 0, $vertically:center, $horizontally:center, $direction:row ) {
+    display: flex;
+        align-items: $vertically;
+        gap: $gap;
+        justify-content: $horizontally;
+        flex-direction: $direction;
+}
+@mixin title($color: $title-color, $size: 0, $height: normal, $spacing: 0, $weight: 0) {
+    color: $color;
+     font-style: normal;
+        font-family: "Roboto";
+        font-size: $size;
+        line-height: $height;
+        letter-spacing: $spacing;
+        font-weight: $weight;
+}
+@mixin text($color: $text-color, $size: 0, $height: normal, $spacing: 0, $weight: 400) {
+    color: $color;
+     font-style: normal;
+        font-family: "Roboto";
+        font-size: $size;
+        line-height: $height;
+        letter-spacing: $spacing;
+        font-weight: $weight;
 }

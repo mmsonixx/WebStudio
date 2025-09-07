@@ -1,229 +1,199 @@
 .hero__backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    transition-property: opacity;
-    transition-duration: 2500ms;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  @include flex-position($direction: none);
+  z-index: 2;
+  transition-property: opacity;
+  transition-duration: 2500ms;
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-
+  opacity: 0;
+  pointer-events: none;
 }
 
 .is-hidden .hero__modal {
-    transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .hero__modal {
-    width: 528px;
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    padding: 14px 40px 40px 40px;
-    z-index: 1;
-    transform: scale(1);
-    transition-property: transform, opacity;
-    transition-duration: 2500ms;
-
+  width: 528px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  padding: 14px 40px 40px 40px;
+  z-index: 1;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  transition-duration: 2500ms;
 }
 
 .hero__modal__button__close {
-    margin-left: 450px;
-    border: solid rgba(0, 0, 0, 0.1) 1px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 450px;
+  border: solid rgba(0, 0, 0, 0.1) 1px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  @include flex-position($direction: none);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__modal__button__close:hover {
-    fill: #2196f3;
+  fill: #2196f3;
 }
 
 .hero__modal__svg {
-    width: 18px;
-    height: 18px;
-    /* outline: solid red; */
+  width: 18px;
+  height: 18px;
+  /* outline: solid red; */
 }
 
 .hero__modal__subtitle {
-    color: #212121;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    margin-bottom: 12px;
+  @include title($size: 20px, $spacing: 0.6px, $weight: 700);
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .hero__modal__form {
-    display: flex;
-    flex-direction: column;
+  @include flex-position(
+    $direction: column,
+    $horizontally: none,
+    $vertically: none
+  );
 }
 
 .hero__modal__label {
-    color: #757575;
-    font-family: "Roboto";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+  @include title($color: $text-color, $size: 12px, $spacing: 0.12px);
 }
 
 .box:hover {
-    border-radius: 4px;
-    border: 1px solid #2196f3;
-    fill: #2196f3;
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .box {
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    width: 448px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 448px;
+  height: 40px;
+  @include flex-position($horizontally: none);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__modal__icon {
-    width: 18px;
-    height: 18px;
-    margin-left: 12px;
-    margin-right: 15px;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  margin-right: 15px;
 }
 
 .hero__modal__input {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 .hero__modal__comment {
-    border: none;
-    outline: none;
-    color: rgba(117, 117, 117, 0.5);
-    font-family: "Roboto";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    width: 448px;
-    height: 120px;
-    flex-shrink: 0;
-    padding-left: 16px;
-    padding-top: 12px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-top: 4px;
-    margin-bottom: 10px;
-    resize: none;
+  @include text(
+    $color: rgba(117, 117, 117, 0.5),
+    $size: 12px,
+    $spacing: 0.12px
+  );
+  border: none;
+  outline: none;
+  width: 448px;
+  height: 120px;
+  flex-shrink: 0;
+  padding-left: 16px;
+  padding-top: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: none;
 }
 
 .hero__modal__label-confirm {
-    text-align: center;
-    color: rgba(117, 117, 117, 0.5);
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.12px;
+  @include text(
+    $color: rgba(117, 117, 117, 0.5),
+    $size: 12px,
+    $spacing: 0.12px
+  );
+  text-align: center;
 }
 
 .hero__modal__checkbox {
-    color: #757575;
-    border-radius: 4px;
-    fill: #212121;
-    margin-left: 7px;
-    color: #757575;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
+  @include text($size: 14px, $height: 24px, $spacing: 0.42px);
+  border-radius: 4px;
+  fill: #212121;
+  margin-left: 7px;
 }
 
-.hero__input__checkbox {}
+.hero__input__checkbox {
+}
 
 .hero__modal__link {
-    color: $link-color;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
+  @include text(
+    $color: $link-color,
+    $size: 14px,
+    $height: 24px,
+    $spacing: 0.42px
+  );
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .hero__modal__button {
-    margin-top: 30px;
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    /* 187.5% */
-    letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
-    margin-left: 120px;
+  @include text(
+    $color: #fff,
+    $size: 16px,
+    $height: 30px,
+    $spacing: 0.96px,
+    $weight: 700
+  );
+  margin-top: 30px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 120px;
 }
 .advertisement__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
 }
 
 .advertisement__box {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .advertisement__item:hover .advertisement__overlay {
-    transform: translatey(0);
+  transform: translatey(0);
 }
 
 .advertisement__overlay p {
-    width: 322px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.54px;
-    margin: 63px 24px;
+    @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
+  width: 322px;
+  margin: 63px 24px;
 }
