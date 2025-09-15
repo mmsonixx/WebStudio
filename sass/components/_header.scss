@@ -1,6 +1,6 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   /* position: fixed;
   top: 0;
@@ -8,13 +8,21 @@
   width: 100%;
   background: #FFF;
   z-index: 2; */
+  @media screen and (min-width: 768) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   &__container {
     @include flex-position($horizontally: none);
   }
 
   &__logo {
     color: #000;
-    @extend %logo;
+    @include logo($size: 24px);
     text-decoration: none;
     transform: translateY(-350%);
     animation: header__link 2s forwards;
@@ -22,14 +30,22 @@
 
   &__logo__color {
     color: $link-color;
-    @extend %logo;
-    font-style: normal;
-    line-height: normal;
+    @include logo($size: 24px);
+   
   }
 
   &__nav {
-    width: 100%;
-    margin-left: 93px;
+    display: none;
+
+    @media screen and (min-width: 768) {
+      margin-left: 88px;
+      display: flex;
+    }
+    @media screen and (min-width: 1200) {
+      width: 100%;
+      margin-left: 93px;
+       display: flex;
+    }
   }
 
   &__list {
@@ -77,9 +93,15 @@
   }
 
   &__contact__list {
-    @include flex-position($horizontally: none);
+    display: none;
     list-style-type: none;
     margin-left: auto;
+    @media screen and (min-width: 768) {
+      @include flex-position($horizontally: none);
+    }
+    @media screen and (min-width: 1200) {
+      @include flex-position($horizontally: none);
+    }
   }
 
   &__contact__item {
