@@ -2,20 +2,14 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  /* position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #FFF;
-  z-index: 2; */
-  @media screen and (min-width: 768) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-  @media screen and (min-width: 1200) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+  z-index: 10;
+  box-shadow: 0px 9px 14.9px #ececec;
+
   &__container {
     @include flex-position($horizontally: none);
   }
@@ -31,21 +25,10 @@
   &__logo__color {
     color: $link-color;
     @include logo($size: 24px);
-   
   }
 
   &__nav {
     display: none;
-
-    @media screen and (min-width: 768) {
-      margin-left: 88px;
-      display: flex;
-    }
-    @media screen and (min-width: 1200) {
-      width: 100%;
-      margin-left: 93px;
-       display: flex;
-    }
   }
 
   &__list {
@@ -96,12 +79,6 @@
     display: none;
     list-style-type: none;
     margin-left: auto;
-    @media screen and (min-width: 768) {
-      @include flex-position($horizontally: none);
-    }
-    @media screen and (min-width: 1200) {
-      @include flex-position($horizontally: none);
-    }
   }
 
   &__contact__item {
@@ -138,5 +115,38 @@
   &__contact__link__tell:hover,
   &__contact__link__tell:focus {
     color: #2196f3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    &__nav {
+      margin-left: 88px;
+      display: flex;
+    }
+    &__contact {
+ margin-left: 96px;
+    }
+    &__contact__list {
+      @include flex-position($direction: column, $vertically: none, $gap: 10px);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &__nav {
+      width: 100%;
+      margin-left: 93px;
+      display: flex;
+    }
+    &__contact__list {
+      @include flex-position($horizontally: none);
+    }
   }
 }
