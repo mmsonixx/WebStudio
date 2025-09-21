@@ -1,11 +1,17 @@
 .options {
-    padding-top: 94px;
+    padding-top: 120px;
 
     &__list {
-        @include flex-position($gap: 8px, $vertically:none);
+        @include flex-position($gap: 8px, $vertically:none, $horizontally: none);
+        flex-wrap: wrap;
+        width: 100%;
+      max-width: 326px;
         }
     
-        &__item {}
+        &__item {
+            border-radius: 4px;
+background: #F5F4FA;
+        }
     
         &__button {
              @include text($color: #212121, $size: 16px, $height: 26px, $spacing: 0.48px, $weight: 500);
@@ -24,4 +30,21 @@
                 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
         }
 }
-
+@media screen and (min-width: 768px) {
+    .options {
+&__list {
+        @include flex-position($gap: 8px, $vertically:none);
+        max-width: 575px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .options {
+        padding-top: 174px;
+     &__list {
+        @include flex-position($gap: 8px, $vertically:none);
+        }   
+    }
+}

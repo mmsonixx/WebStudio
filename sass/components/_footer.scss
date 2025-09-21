@@ -108,7 +108,8 @@
 
   &__label {
     @include flex-position($horizontally: none);
-    width: 450px;
+    width: 290px;
+    max-width: 450px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -150,6 +151,9 @@
     &__container {
       @include flex-position($horizontally: space-around);
       flex-wrap: wrap;
+    }
+      &__label {
+      width: 450px;
     }
     &__box {
       margin-bottom: 102px;

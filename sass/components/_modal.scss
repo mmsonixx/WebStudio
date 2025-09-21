@@ -1,4 +1,6 @@
-.hero__backdrop {
+.modal {
+
+  &__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,17 +13,18 @@
   transition-duration: 2500ms;
 }
 
-.is-hidden {
+ .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.is-hidden .hero__modal {
+.is-hidden .modal__wrapper {
   transform: scale(0.5);
 }
 
-.hero__modal {
-  width: 528px;
+&__wrapper {
+min-width: 290px;
+  max-width: 450px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
@@ -33,8 +36,9 @@
   transition-duration: 2500ms;
 }
 
-.hero__modal__button__close {
-  margin-left: 450px;
+&__button__close {
+  // margin-left: 370px;
+margin-left: auto;
   border: solid rgba(0, 0, 0, 0.1) 1px;
   border-radius: 50%;
   width: 30px;
@@ -43,23 +47,23 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__modal__button__close:hover {
+&__button__close:hover {
   fill: #2196f3;
 }
 
-.hero__modal__svg {
+&__svg {
   width: 18px;
   height: 18px;
   /* outline: solid red; */
 }
 
-.hero__modal__subtitle {
+&__subtitle {
   @include title($size: 20px, $spacing: 0.6px, $weight: 700);
   text-align: center;
   margin-bottom: 12px;
 }
 
-.hero__modal__form {
+&__form {
   @include flex-position(
     $direction: column,
     $horizontally: none,
@@ -67,20 +71,21 @@
   );
 }
 
-.hero__modal__label {
+&__label {
   @include title($color: $text-color, $size: 12px, $spacing: 0.12px);
 }
 
-.box:hover {
+&__box:hover {
   border-radius: 4px;
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
-.box {
+&__box {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 448px;
+  min-width: 255px;
+  max-width: 370px;
   height: 40px;
   @include flex-position($horizontally: none);
   margin-top: 4px;
@@ -89,19 +94,19 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__modal__icon {
+&__icon {
   width: 18px;
   height: 18px;
   margin-left: 12px;
   margin-right: 15px;
 }
 
-.hero__modal__input {
+&__input {
   outline: none;
   border: none;
 }
 
-.hero__modal__comment {
+&__comment {
   @include text(
     $color: rgba(117, 117, 117, 0.5),
     $size: 12px,
@@ -109,7 +114,8 @@
   );
   border: none;
   outline: none;
-  width: 448px;
+    min-width: 255px;
+  max-width: 370px;
   height: 120px;
   flex-shrink: 0;
   padding-left: 16px;
@@ -121,31 +127,30 @@
   resize: none;
 }
 
-.hero__modal__label-confirm {
+&__label-confirm {
   @include text(
     $color: rgba(117, 117, 117, 0.5),
     $size: 12px,
     $spacing: 0.12px
   );
-  text-align: center;
+  
 }
 
-.hero__modal__checkbox {
-  @include text($size: 14px, $height: 24px, $spacing: 0.42px);
+&__checkbox {
+  @include text($size: 12px, $spacing: 0.36px);
   border-radius: 4px;
   fill: #212121;
-  margin-left: 7px;
+ 
 }
 
-.hero__input__checkbox {
+&__input__checkbox {
 }
 
-.hero__modal__link {
+&__link {
   @include text(
     $color: $link-color,
-    $size: 14px,
-    $height: 24px,
-    $spacing: 0.42px
+    $size: 12px,
+    $spacing: 0.36px
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -155,7 +160,7 @@
   text-underline-position: from-font;
 }
 
-.hero__modal__button {
+&__button {
   @include text(
     $color: #fff,
     $size: 16px,
@@ -170,30 +175,45 @@
   text-align: center;
   width: 200px;
   height: 50px;
-  margin-left: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.advertisement__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
 }
 
-.advertisement__box {
-  position: relative;
-  overflow: hidden;
+@media screen and (min-width: 1200px) {
+  .modal {
+    &__wrapper {
+      width: 528px;
+  max-width: 528px;
+}
+&__box {
+   max-width: 448px;
+}
+&__button__close {
+  margin-left: 450px;
+}
+&__comment {
+  max-width: 448px;
+}
+&__label-confirm {
+text-align: center;
+}
+&__checkbox {
+ margin-left: 7px;
+  @include text($size: 14px, $height: 24px, $spacing: 0.42px);
+}
+&__link {
+   @include text(
+    $color: $link-color,
+    $size: 14px,
+    $height: 24px,
+    $spacing: 0.42px
+  );
+}
+&__button {
+    
+}
+  }
 }
 
-.advertisement__item:hover .advertisement__overlay {
-  transform: translatey(0);
-}
 
-.advertisement__overlay p {
-    @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
-  width: 322px;
-  margin: 63px 24px;
-}

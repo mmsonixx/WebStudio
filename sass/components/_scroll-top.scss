@@ -4,8 +4,8 @@
     position: fixed;
      bottom: 20px;
     right: 40px;
-      width: 70px;
-    height: 70px;
+      width: 50px;
+    height: 50px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -17,12 +17,23 @@
     transition: all .4s;
 }
 .iocn__to-top {
-    width: 30px;
-    height: 40px;
+    width: 20px;
+    height: 30px;
     fill: #eee;
 }
 .scroll__top.active {
     bottom: 40px;
     pointer-events: auto;
     opacity: 1;
+}
+@media screen and (min-width: 768px) {
+    .scroll__top {
+      width: 70px;
+    height: 70px;
+}
+.iocn__to-top {
+    width: 30px;
+    height: 40px;
+  
+}
 }

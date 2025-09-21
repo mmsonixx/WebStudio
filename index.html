@@ -84,12 +84,6 @@
           <!-- Mobile menu -->
            <div class="burger">
             <span></span>
-            <!-- <ul class="burger__list">
-              <li class="burger__item">Instagram</li>
-              <li class="burger__item">Twitter</li>
-              <li class="burger__item">Facebook</li>
-              <li class="burger__item">LinkedIn</li>
-            </ul> -->
            </div>
         </div>
       </div>
@@ -103,62 +97,64 @@
           </button>
         </div>
       </section>
-      <div class="hero__backdrop is-hidden" data-modal>
-        <div class="hero__modal">
-          <button class="hero__modal__button__close" data-modal-close>
-            <svg class="hero__modal__svg">
+      <section class="modal">
+      <div class="modal__backdrop is-hidden" data-modal>
+        <div class="modal__wrapper">
+          <button class="modal__button__close" data-modal-close>
+            <svg class="modal__svg">
               <use href="./img/icons/symbol-defs.svg#icon-close-modal"></use>
             </svg>
           </button>
-          <h3 class="hero__modal__subtitle">
+          <h3 class="modal__subtitle">
             Залиште свої дані, ми вам передзвонимо
           </h3>
-          <form action="" class="hero__modal__form">
-            <label for="" class="hero__modal__label"> Ім'я </label>
-            <div class="box">
-              <svg class="hero__modal__icon">
+          <form action="" class="modal__form">
+            <label for="" class="modal__label"> Ім'я </label>
+            <div class="modal__box">
+              <svg class="modal__icon">
                 <use href="./img/icons/symbol-defs.svg#icon-person-modal"></use>
               </svg>
-              <input type="text" class="hero__modal__input" />
+              <input type="text" class="modal__input" />
             </div>
 
-            <label for="" class="hero__modal__label"> Телефон</label>
-            <div class="box">
-              <svg class="hero__modal__icon">
+            <label for="" class="modal__label"> Телефон</label>
+            <div class="modal__box">
+              <svg class="modal__icon">
                 <use href="./img/icons/symbol-defs.svg#icon-phone-modal"></use>
               </svg>
-              <input type="tel" class="hero__modal__input" />
+              <input type="tel" class="modal__input" />
             </div>
 
-            <label for="" class="hero__modal__label"> Пошта </label>
-            <div class="box">
-              <svg class="hero__modal__icon">
+            <label for="" class="modal__label"> Пошта </label>
+            <div class="modal__box">
+              <svg class="modal__icon">
                 <use href="./img/icons/symbol-defs.svg#icon-email-modal"></use>
               </svg>
-              <input type="email" class="hero__modal__input" />
+              <input type="email" class="modal__input" />
             </div>
 
-            <label for="" class="hero__modal__label"> Коментар</label>
+            <label for="" class="modal__label"> Коментар</label>
             <textarea
-              class="hero__modal__comment"
+              class="modal__comment"
               name=""
               id=""
               type="text"
               placeholder="Введіть текст"
               required
             ></textarea>
-            <div class="hero__modal__label-confirm">
-              <input type="checkbox" class="hero__input__checkbox" required />
+            <div class="modal__label-confirm">
+              <input type="checkbox" class="modal__input__checkbox" required />
 
-              <label for="" class="hero__modal__checkbox">
+              <label for="" class="modal__checkbox">
                 Погоджуюся з розсилкою та приймаю
-                <a href="" class="hero__modal__link">Умови договору</a>
+                <a href="" class="modal__link">Умови договору</a>
               </label>
             </div>
-            <button class="hero__modal__button">Відправити</button>
+            <button class="modal__button">Відправити</button>
           </form>
         </div>
       </div>
+      </section>
       <section class="features">
         <div class="container">
           <div class="features__container">
