@@ -82,12 +82,33 @@
             </ul>
           </div>
           <!-- Mobile menu -->
-           <div class="burger">
-            <span></span>
-           </div>
+          <div class="burger">
+            <button data-menu-open >
+              <span></span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
+     <!-- Mobile menu -->
+       <div class="menu is-hidden" data-menu>
+
+<ul class="menu__list">
+  <li class="menu__item">Студія</li>
+  <li class="menu__item">Портфоліо</li>
+  <li class="menu__item">Контакти</li>
+</ul>
+<ul class="menu__contacts">
+  <li class="menu__contact"><a href="" class="menu__contact__link">+38 096 111 11 11</a></li>
+  <li class="menu__contact"><a href="" class="menu__contact__link">info@devstudio.com</a></li>
+</ul>
+<ul class="menu__socials">
+  <li class="menu__social"><a href="" class="menu__social__link">Instagram</a></li>
+  <li class="menu__social"><a href="" class="menu__social__link">Twitter</a></li>
+  <li class="menu__social"><a href="" class="menu__social__link">Facebook</a></li>
+  <li class="menu__social"><a href="" class="menu__social__link">LinkedIn</a></li>
+</ul>
+       </div>
     <main>
       <section class="hero">
         <div class="container">
@@ -98,62 +119,72 @@
         </div>
       </section>
       <section class="modal">
-      <div class="modal__backdrop is-hidden" data-modal>
-        <div class="modal__wrapper">
-          <button class="modal__button__close" data-modal-close>
-            <svg class="modal__svg">
-              <use href="./img/icons/symbol-defs.svg#icon-close-modal"></use>
-            </svg>
-          </button>
-          <h3 class="modal__subtitle">
-            Залиште свої дані, ми вам передзвонимо
-          </h3>
-          <form action="" class="modal__form">
-            <label for="" class="modal__label"> Ім'я </label>
-            <div class="modal__box">
-              <svg class="modal__icon">
-                <use href="./img/icons/symbol-defs.svg#icon-person-modal"></use>
+        <div class="modal__backdrop is-hidden" data-modal>
+          <div class="modal__wrapper">
+            <button class="modal__button__close" data-modal-close>
+              <svg class="modal__svg">
+                <use href="./img/icons/symbol-defs.svg#icon-close-modal"></use>
               </svg>
-              <input type="text" class="modal__input" />
-            </div>
+            </button>
+            <h3 class="modal__subtitle">
+              Залиште свої дані, ми вам передзвонимо
+            </h3>
+            <form action="" class="modal__form">
+              <label for="" class="modal__label"> Ім'я </label>
+              <div class="modal__box">
+                <svg class="modal__icon">
+                  <use
+                    href="./img/icons/symbol-defs.svg#icon-person-modal"
+                  ></use>
+                </svg>
+                <input type="text" class="modal__input" />
+              </div>
 
-            <label for="" class="modal__label"> Телефон</label>
-            <div class="modal__box">
-              <svg class="modal__icon">
-                <use href="./img/icons/symbol-defs.svg#icon-phone-modal"></use>
-              </svg>
-              <input type="tel" class="modal__input" />
-            </div>
+              <label for="" class="modal__label"> Телефон</label>
+              <div class="modal__box">
+                <svg class="modal__icon">
+                  <use
+                    href="./img/icons/symbol-defs.svg#icon-phone-modal"
+                  ></use>
+                </svg>
+                <input type="tel" class="modal__input" />
+              </div>
 
-            <label for="" class="modal__label"> Пошта </label>
-            <div class="modal__box">
-              <svg class="modal__icon">
-                <use href="./img/icons/symbol-defs.svg#icon-email-modal"></use>
-              </svg>
-              <input type="email" class="modal__input" />
-            </div>
+              <label for="" class="modal__label"> Пошта </label>
+              <div class="modal__box">
+                <svg class="modal__icon">
+                  <use
+                    href="./img/icons/symbol-defs.svg#icon-email-modal"
+                  ></use>
+                </svg>
+                <input type="email" class="modal__input" />
+              </div>
 
-            <label for="" class="modal__label"> Коментар</label>
-            <textarea
-              class="modal__comment"
-              name=""
-              id=""
-              type="text"
-              placeholder="Введіть текст"
-              required
-            ></textarea>
-            <div class="modal__label-confirm">
-              <input type="checkbox" class="modal__input__checkbox" required />
+              <label for="" class="modal__label"> Коментар</label>
+              <textarea
+                class="modal__comment"
+                name=""
+                id=""
+                type="text"
+                placeholder="Введіть текст"
+                required
+              ></textarea>
+              <div class="modal__label-confirm">
+                <input
+                  type="checkbox"
+                  class="modal__input__checkbox"
+                  required
+                />
 
-              <label for="" class="modal__checkbox">
-                Погоджуюся з розсилкою та приймаю
-                <a href="" class="modal__link">Умови договору</a>
-              </label>
-            </div>
-            <button class="modal__button">Відправити</button>
-          </form>
+                <label for="" class="modal__checkbox">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="" class="modal__link">Умови договору</a>
+                </label>
+              </div>
+              <button class="modal__button">Відправити</button>
+            </form>
+          </div>
         </div>
-      </div>
       </section>
       <section class="features">
         <div class="container">
@@ -247,7 +278,7 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team__title"  data-aos="fade-down" data-aos-duration="2000">
+          <h2 class="team__title" data-aos="fade-down" data-aos-duration="2000">
             Наша команда
           </h2>
           <div class="team__container">
@@ -460,7 +491,7 @@
         <div class="container">
           <h2
             class="clients__title"
-              data-aos="fade-down"
+            data-aos="fade-down"
             data-aos-duration="2000"
           >
             Постійні клієнти
@@ -519,7 +550,9 @@
             <a class="footer__logo" href="#"
               ><span class="footer__logo__colored">Web</span>Studio</a
             >
-            <a class="footer__adress" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+            <a class="footer__adress" href="#"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
             <a class="footer__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
