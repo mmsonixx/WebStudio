@@ -12,6 +12,7 @@
 
   &__container {
     @include flex-position($horizontally: none);
+  
   }
 
   &__logo {
@@ -28,17 +29,19 @@
   }
 
   &__nav {
-    display: none;
+  
   }
 
   &__list {
-    @include flex-position($gap: 50px, $horizontally: none);
-    list-style-type: none;
+    // @include flex-position($gap: 50px, $horizontally: none);
+    // list-style-type: none;
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
-    transform: translateY(-300%);
-    animation: header__link 2s forwards;
+    // transform: translateY(-300%);
+    // animation: header__link 2s forwards;
   }
 
   &__link::after {
@@ -73,20 +76,23 @@
   }
 
   &__contact {
+    
   }
 
   &__contact__list {
-    display: none;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
-    margin-left: auto;
+   
   }
 
   &__contact__item {
   }
 
   &__contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    // margin-right: 10px;
+    // fill: currentColor;
+    display: none;
   }
 
   &__contact__link {
@@ -94,8 +100,8 @@
     margin-right: 50px;
     @include flex-position($horizontally: none);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-300%);
-    animation: header__link 2s forwards;
+    // transform: translateY(-300%);
+    // animation: header__link 2s forwards;
   }
 
   &__contact__link:hover,
@@ -108,8 +114,8 @@
     text-wrap: nowrap;
     display: flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-300%);
-    animation: header__link 2s forwards;
+    // transform: translateY(-300%);
+    // animation: header__link 2s forwards;
   }
 
   &__contact__link__tell:hover,
@@ -126,12 +132,33 @@
       margin-left: 88px;
       display: flex;
     }
+    &__list {
+    @include flex-position($gap: 50px, $horizontally: none);
+    list-style-type: none;
+  }
+  &__item {
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
+  }
+  &__contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
     &__contact {
  margin-left: 96px;
     }
     &__contact__list {
       @include flex-position($direction: column, $vertically: none, $gap: 10px);
+      margin-left: auto;
     }
+    &__contact__link {
+      transform: translateY(-300%);
+    animation: header__link 2s forwards;
+    }
+      &__contact__link__tell {
+         transform: translateY(-300%);
+    animation: header__link 2s forwards;
+      }
   }
 }
 
@@ -145,8 +172,12 @@
       margin-left: 93px;
       display: flex;
     }
+      &__contact {
+ margin-left: 315px;
+    }
     &__contact__list {
       @include flex-position($horizontally: none);
+      margin-left: auto;
     }
   }
 }
