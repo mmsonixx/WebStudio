@@ -33,15 +33,15 @@
   }
 
   &__list {
-    // @include flex-position($gap: 50px, $horizontally: none);
-    // list-style-type: none;
+    @include flex-position($gap: 50px, $horizontally: none);
+    list-style-type: none;
     display: flex;
     flex-direction: column;
   }
 
   &__item {
-    // transform: translateY(-300%);
-    // animation: header__link 2s forwards;
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
   }
 
   &__link::after {
@@ -90,8 +90,8 @@
   }
 
   &__contact__icon {
-    // margin-right: 10px;
-    // fill: currentColor;
+    margin-right: 10px;
+    fill: currentColor;
     display: none;
   }
 
@@ -100,8 +100,8 @@
     margin-right: 50px;
     @include flex-position($horizontally: none);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // transform: translateY(-300%);
-    // animation: header__link 2s forwards;
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
   }
 
   &__contact__link:hover,
@@ -114,8 +114,8 @@
     text-wrap: nowrap;
     display: flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // transform: translateY(-300%);
-    // animation: header__link 2s forwards;
+    transform: translateY(-300%);
+    animation: header__link 2s forwards;
   }
 
   &__contact__link__tell:hover,
