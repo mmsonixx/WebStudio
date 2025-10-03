@@ -45,6 +45,7 @@
   }
 
   &__box {
+    padding-bottom: 30px;
   }
 
   &__list__icons {
@@ -65,7 +66,7 @@
     @include flex-position();
     border-radius: 50%;
     background-color: #ffffff;
-    margin-bottom: 30px;
+    
     fill: #afb1b8;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

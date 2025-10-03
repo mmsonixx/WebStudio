@@ -103,7 +103,7 @@
   }
 
   &__form {
-    @include flex-position($gap: 12px, $direction: column);
+    @include flex-position($direction: column);
   }
 
   &__label {

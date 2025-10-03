@@ -34,6 +34,12 @@
           <a class="header__logo" href="./index.html"
             ><span class="header__logo__color">Web</span>Studio</a
           >
+          <!-- Mobile menu -->
+          <button class="burger" data-menu-open>
+            <svg class="burger__icon">
+              <use href="././img/icons/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
@@ -82,13 +88,62 @@
               </li>
             </ul>
           </div>
-          <!-- Mobile menu -->
-           <div class="burger">
-            <span></span>
-           </div>
         </div>
       </div>
     </header>
+    <!-- Mobile menu -->
+    <section class="menu">
+      <div class="menu__backdrop is-hidden" data-menu>
+        <div class="menu__container">
+          <button class="menu__btn__close" data-menu-close>
+            <svg class="menu__icon">
+              <use href="././img/icons/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Студія</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__contact">
+            <ul class="menu__contact__list">
+              <li class="menu__contact__item">
+                <a href="tel:+380961111111" class="menu__contact__link-tell"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu__contact__item">
+                <a href="mailto:info@devstudio.com" class="menu__contact__link">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__box">
+            <ul class="menu__socials">
+              <li class="menu__social">
+                <a href="" class="menu__socials__link">Instagram</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__socials__link">Twitter</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__socials__link">Facebook</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <main>
       <section class="options">
         <div class="container">
@@ -360,6 +415,7 @@
       </svg>
     </a>
     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

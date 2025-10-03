@@ -29,7 +29,7 @@
   }
 
   &__nav {
-  
+  display: none;
   }
 
   &__list {
@@ -76,7 +76,7 @@
   }
 
   &__contact {
-    
+    display: none;
   }
 
   &__contact__list {
@@ -92,7 +92,7 @@
   &__contact__icon {
     margin-right: 10px;
     fill: currentColor;
-    display: none;
+    
   }
 
   &__contact__link {
@@ -146,6 +146,7 @@
   }
     &__contact {
  margin-left: 96px;
+ display: flex;
     }
     &__contact__list {
       @include flex-position($direction: column, $vertically: none, $gap: 10px);

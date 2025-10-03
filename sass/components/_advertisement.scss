@@ -1,12 +1,11 @@
 .advertisement {
   padding-bottom: 94px;
- padding-top: 40px;
+  padding-top: 40px;
   &__list {
     @include flex-position($gap: 30px);
     list-style-type: none;
     flex-wrap: wrap;
     align-self: center;
-   
   }
 
   &__item {
@@ -63,42 +62,48 @@
   }
 
   &__overlay p {
-  @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
+    @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
     margin: 66px 24px;
   }
 }
 @media screen and (max-width: 380px) {
   .advertisement {
     &__overlay p {
-  @include text($color: #fff, $size: 18px, $spacing: 0.54px);
-    margin: 30px 24px;
-    width: 100%;
-    max-width: 250px;
-  }
+      @include text($color: #fff, $size: 18px, $spacing: 0.54px);
+      margin: 30px 24px;
+      width: 100%;
+      max-width: 250px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
   .advertisement {
-     padding-top: 30px;
+    padding-top: 30px;
+    &__list {
+      @include flex-position($gap: 30px, $horizontally: flex-start);
+    }
     &__item {
       width: 354px;
     }
-     &__overlay p {
-    @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
-  }
+    &__overlay p {
+      @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
   .advertisement {
-   padding-top: 50px;
-     &__item {
+    padding-top: 50px;
+    &__list {
+      @include flex-position($gap: 30px);
+    }
+    &__item {
       width: 370px;
     }
-     &__overlay p {
-    @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
-    width: 100%;
-   max-width: 322px; 
-    margin: 63px 24px;
-  }
+    &__overlay p {
+      @include text($color: #fff, $size: 18px, $height: 28px, $spacing: 0.54px);
+      width: 100%;
+      max-width: 322px;
+      margin: 63px 24px;
+    }
   }
 }
