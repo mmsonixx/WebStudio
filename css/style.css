@@ -115,7 +115,7 @@ html {
   gap: 0;
   justify-content: center;
   flex-direction: none;
-  z-index: 2;
+  z-index: 10;
   transition-property: opacity;
   transition-duration: 2500ms;
 }
@@ -1239,6 +1239,7 @@ html {
 .burger {
   margin-left: auto;
   fill: #000;
+  background-color: transparent;
 }
 
 .burger__icon {
@@ -1275,6 +1276,7 @@ html {
   width: 40px;
   height: 40px;
   margin-left: auto;
+  background-color: transparent;
 }
 .menu__btn__close:hover {
   fill: #2196f3;
@@ -1346,6 +1348,9 @@ html {
 
 @media screen and (min-width: 768px) {
   .burger {
+    display: none;
+  }
+  .menu {
     display: none;
   }
 }

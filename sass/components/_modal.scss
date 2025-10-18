@@ -8,7 +8,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
   @include flex-position($direction: none);
-  z-index: 2;
+  z-index: 10;
   transition-property: opacity;
   transition-duration: 2500ms;
 }
